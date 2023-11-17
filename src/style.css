@@ -294,6 +294,7 @@ section {
 .hembra h2 {
     font-size: 3.2rem;
     line-height: 1.4;
+    margin-top: 50px;
     margin-bottom: 30px;
     color: var(--main-color);
 }
@@ -359,11 +360,11 @@ cursor: pointer;
     text-align: center;
     height: auto;
     width: 98%;
+    padding-top: 40px;
 }
 #cachorros h2 {
     font-size: 3.2rem;
     line-height: 1.4;
-    margin-bottom: 10px;
     color: var(--main-color);
 }
 
@@ -418,38 +419,79 @@ cursor: pointer;
     }
 }
 
-/* cachorros-pg */
-.cachorros-pg {
-    height: 100vh;
-    width: 98%;
-    align-items: center;
+/* cachorritos */
+
+#cachorritos-pg {
     text-align: center;
+    height: auto;
+    width: 98%;
+    padding-top: 50px;
 }
 
-.cachorros-pg h1{
+#cachorritos-pg h1{
     font-size: 3.2rem;
     line-height: 1.4;
-    margin-top: 80px;
     margin-bottom: 10px;
     color: var(--main-color);
+    padding-top: 40px;
 }
 
-.reglas {
-    row-gap: 3.5rem;
+
+
+.contenedor{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    place-items: center;
+    margin-inline:1.5rem ;
 }
 
-.regla-img {
+.content-section img{
     width: 450px;
     border-radius: 1.5rem;
-    cursor: pointer;
 }
 
-@media (max-width: 1250px){
-    .regla-img{
-        width: 400px;
+.content-section h2{
+    font-size: 28px;
+    color: var(--logo-color);
+}
+.content-section p{
+    font-size: 20px;
+    color: var(--main-color);
+    margin-bottom: 30px;
+}
+
+#cachorritos-pg .regla-img{
+    width: 450px;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    border-radius: 1.5rem;
+}
+
+@media (max-width: 1800px){ 
+    .content-section img{
+        width: 350px;
+        padding-right: 10px;
         margin-bottom: 30px;
     }
+
+   @media(max-width: 1200px){
+    .contenedor{
+        grid-template-columns: 1fr;
+    }
+    .content-section img{
+        width: 400px;
+    }
+
+   }
 }
+
+
+
+
+
+
+
+
 
 
 
